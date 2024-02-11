@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+
+.navbar {
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid grey; */
+    /* gap: 15vw; */
+    justify-content: space-between;
+}
+
+i {
+    cursor: pointer;
+    margin: 0 15px;
+    font-size: 25px;
+}
+
+.logo {
+    /* border: 1px solid black; */
+    height: 5vh;
+    width: 3vw;
+}
+
+.search {
+    height: 5vh;
+    width: 7vw;
+    /* border: 1px solid black; */
+}
+
+.brand {
+    display: flex;
+    /* border: 1px solid black; */
+    height: inherit;
+    width: 15vw;
+    align-items: center;
+    padding: 15px 15px;
+}
+.navelements {
+    /* border: 1px solid black; */
+    height: inherit;
+    width: auto;
+    align-items: center;
+    padding: 15px 15px;
+
+}
+
+.profile {
+    height: inherit;
+    width: auto;
+    align-items: center;
+    padding: 15px 15px;
+    /* border: 1px solid black; */
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.left-section {
+    height: calc(100% - 7vh);
+    width: 20vw;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.overview {
+    height: 30vh;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+
+.overview-elements {
+    height: 18vh;
+    width: inherit;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ .OW-ele {
+    height: 26vh;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+    margin-left: 8vh;
+}
+
+.OW-ele .fa-solid {
+    font-size: 2vh;
+}
+
+
+.overview-elements .OW-ele a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.div {
+    height: 54vh;
+    width: inherit;
+
+}
+
+
+.middle-section {
+    height: calc(100%-7vh);
+    width: 80vw;
+    position: sticky;
+}
+
+
+
