@@ -1,131 +1,117 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+    display:flex;
+    flex-direction: column;
+    min-height:100vw;
+    }
+.navbar{
+    background-color: rgb(255, 255, 255) !important;
+    width:100%;
+    height:5rem !important;
+}
+.nav-link{
+    color:black !important;
+}
+.listing-card{
+    height: 20rem;
+}
+.card-img-overlay{
+    background-color: white ;
+    opacity:0;
+}
+.card-img-overlay:hover{
+background-color: white;
+opacity:0.3;
+color:black;
+
 }
 
-html , body {
+.show-card{
+    border:none !important;
+}
+.show-img{
+    height:200px !important;
+    width:500px !important;
+    border-radius: 15px !important;
+}
+.main {
     height: 100%;
     width: 100%;
-}
-
-
-.navbar {
-    height: 7vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    /* border: 1px solid grey; */
-    /* gap: 15vw; */
-    justify-content: space-between;
-}
-
-i {
-    cursor: pointer;
-    margin: 0 15px;
-    font-size: 25px;
-}
-
-.logo {
-    /* border: 1px solid black; */
-    height: 5vh;
-    width: 3vw;
-}
-
-.search {
-    height: 5vh;
-    width: 7vw;
-    /* border: 1px solid black; */
-}
-
-.brand {
-    display: flex;
-    /* border: 1px solid black; */
-    height: inherit;
-    width: 15vw;
-    align-items: center;
-    padding: 15px 15px;
-}
-.navelements {
-    /* border: 1px solid black; */
-    height: inherit;
-    width: auto;
-    align-items: center;
-    padding: 15px 15px;
-
-}
-
-.profile {
-    height: inherit;
-    width: auto;
-    align-items: center;
-    padding: 15px 15px;
-    /* border: 1px solid black; */
-
+    position: relative;
 }
 
 .content {
+    height: calc(100% - 100px);
+    width: 100%;
+    position: relative;
     display: flex;
-    justify-content: space-between;
 }
-.left-section {
-    height: calc(100% - 7vh);
-    width: 20vw;
-    border: 1px solid grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.left {
+    height: 100%;
+    width: 50%;
+    padding:  5vw  4vw;
 }
 
-.overview {
-    height: 30vh;
-    width: inherit;
+.left h1 {
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+}
+
+.left h1 span {
+    color: lightseagreen;
+}
+
+.left p {
+    font-size: 3vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 1.5vw;
+    margin-bottom: 4vw;
+}
+
+.left span {
+    color: lightseagreen;
+}
+
+.left #i {
+    color: #5cbec6;
+}
+
+.content button {
+    font-size: 1.2vw ;
+    padding: 1.1vw 2.1vw;
+    background-color: #ff5f4a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.right {
+    height: 100%;
+    width: 45%;
+    border: none;
+}
+.right img  {
+    margin-top: 30%;
+    height: 50%;
+    width: 120%;
+    border: none;
+}
+.btns{
+    display:flex;
+    gap:10px;
+}
+#video-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-evenly;
-    border: 1px solid black;
-}
-
-.overview-elements {
-    height: 18vh;
-    width: inherit;
-    display:flex ;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
- .OW-ele {
-    height: 26vh;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1vw;
-    margin-left: 8vh;
-}
-
-.OW-ele .fa-solid {
-    font-size: 2vh;
-}
-
-
-.overview-elements .OW-ele a {
-    text-decoration: none;
-    color: black;
-}
-
-
-.div {
-    height: 54vh;
-    width: inherit;
-
-}
-
-
-.middle-section {
-    height: calc(100%-7vh);
-    width: 80vw;
-    position: sticky;
-}
-
-
-
+    flex-wrap: wrap;
+  }
+  
+  video {
+    width: 300px;
+    height: 225px;
+    margin: 10px;
+  }
+  
